@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Amor e bem Estar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      color: #4B5563;
+    }
+    p, input, form, label {
+      transition: all 0.3s ease-in-out;
+      font-family: 'Inter', sans-serif;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(59,130,246,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(59,130,246,0); }
+      100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .transition-card {
+      transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    }
+    .transition-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .interactive:hover {
+      background-color: #f0f9ff;
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .pulse {
+      animation: pulseGlow 2s infinite;
+    }
+  </style>
+</head>
+<body class="bg-blue-100 text-gray-800">
+  <header class="bg-gradient-to-r from-purple-700 via-pink-500 to-blue-600 text-white py-12 shadow-2xl fade-in-up">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold tracking-wide animate-bounce drop-shadow-lg">Clínica Amor e bem Estar</h1>
+      <h2 class="text-2xl mt-3 font-light italic">Cuidado completo com você e sua família</h2>
+    </div>
+  </header>
+
+  <section class="py-20 px-4 fade-in-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Nossos Serviços</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="bg-white rounded-2xl shadow-2xl p-6 transition-card interactive">
+          <img src="images (2).jpg" alt="Médico examinando criança" class="rounded-xl mb-4">
+          <p class="text-lg">Atendimento médico humanizado para todas as idades.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-2xl p-6 transition-card interactive">
+          <img src="equipe-medica-conversa.jpg" alt="Equipe médica em consulta" class="rounded-xl mb-4">
+          <p class="text-lg">Consultas especializadas e exames laboratoriais com tecnologia de ponta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-200 py-20 px-4 fade-in-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Ambiente Acolhedor</h2>
+      <img src="Projeto-Para-Sala-de-Espera-em-Hospitais.jpg" alt="Sala de espera moderna" class="rounded-2xl mx-auto max-w-3xl shadow-2xl pulse">
+      <p class="mt-6 text-lg">Espaços amplos e confortáveis para o bem-estar dos nossos pacientes.</p>
+    </div>
+  </section>
+
+  <section class="py-20 px-4 bg-blue-100 fade-in-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Nossa Equipe</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="transition-card interactive">
+          <img src="paciente-de-tiro-medio-e-medico-abracando_23-2149856221.avif" alt="Médicos em união" class="rounded-xl shadow-xl mb-4">
+          <p class="text-lg">Trabalho em equipe para oferecer o melhor atendimento.</p>
+        </div>
+        <div class="transition-card interactive">
+          <img src="images (1).jpg" alt="Médicos sorrindo" class="rounded-xl shadow-xl mb-4">
+          <p class="text-lg">Profissionais qualificados e dedicados.</p>
+        </div>
+        <div class="transition-card interactive">
+          <img src="saiba-como-montar-uma-equipe-para-sua-clinica-medica-810x541.jpg" alt="Equipe completa" class="rounded-xl shadow-xl mb-4">
+          <p class="text-lg">Especialistas prontos para te atender com excelência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-200 py-20 px-4 fade-in-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Quer saber mais?</h2>
+      <form class="max-w-xl mx-auto space-y-5">
+        <input type="text" placeholder="Nome completo" required class="w-full px-5 py-3 border border-gray-300 rounded-full shadow focus:ring-4 focus:ring-blue-400">
+        <input type="email" placeholder="E-mail" required class="w-full px-5 py-3 border border-gray-300 rounded-full shadow focus:ring-4 focus:ring-blue-400">
+        <input type="text" placeholder="Cidade" required class="w-full px-5 py-3 border border-gray-300 rounded-full shadow focus:ring-4 focus:ring-blue-400">
+        <input type="text" placeholder="Estado" required class="w-full px-5 py-3 border border-gray-300 rounded-full shadow focus:ring-4 focus:ring-blue-400">
+        <input type="submit" value="Enviar" class="bg-blue-700 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-800 transition duration-300 cursor-pointer">
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center py-8 mt-8 fade-in-up">
+    <p class="text-lg">&copy; 2025 Clínica Amor e bem Estar. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.fade-in-up').forEach((el, i) => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, i * 300);
+    });
+  </script>
+</body>
+</html>
